@@ -1,0 +1,25 @@
+#nav-list {
+    list-style: none;
+    padding: 0;
+}
+#nav-list li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.restaurant img {
+    width: 500px;
+}
+.stars svg {
+    color: #F4BA15;
+    width: 28px;
+}
+.reviewForm div{
+    padding-bottom: 15px;
+}
+#address{
+    margin-top: 20px;
+}
+#map{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
