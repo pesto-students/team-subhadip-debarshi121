@@ -1,0 +1,43 @@
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+    font-style: italic;
+    color: blue;
+}
+
+#container {
+    width: 600px;
+    height: 280px;
+    border: 2px solid blue;
+    padding: 5px;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+#yellow-bg {
+    background-color: yellow;
+    float: left;
+    width: 200px;
+    padding: 10px;
+    margin: 0px 10px 0px 0px;
+}
+
+#orange-bg {
+    background-color: orange;
+    position: absolute;
+    top: 200px;
+    left: 110px;
+    width: 200px;
+    padding: 10px;
+}
+#orange-red-bg{
+    background-color: rgb(255, 80, 0);
+    position: absolute;
+    top: 160px;
+    right: 40px;
+    color: white;
+    float: right;
+    width: 200px;
+    padding: 10px;
+    margin-right: 20px 40px 0px 0px;
+}
