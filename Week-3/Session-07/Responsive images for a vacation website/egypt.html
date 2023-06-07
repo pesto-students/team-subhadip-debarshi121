@@ -14,7 +14,7 @@
       <h2>Egypt</h2>
       
       <!-- TODO: Add srcset attribute -->
-      <img src="egypt_600.jpg" srcset="egypt_600.jpg dpr=1x, egypt_1200.jpg 2x, egypt_1800.jpg 3x" alt="Great Sphyinx and pyramid" class="stretch-image">
+      <img src="egypt_600.jpg" srcset="egypt_600.jpg 1x, egypt_1200.jpg 2x, egypt_1800.jpg 3x" alt="Great Sphyinx and pyramid" class="stretch-image">
 
       <p>Egpyt is a land of enduring beauty and rich culture.
          Explore the capital city of <strong>Cairo</strong>,
@@ -23,7 +23,7 @@
       </p>
 
       <!-- TODO: Add srcset and sizes attributes -->
-      <img src="luxor_600.jpg" srcset="luxor_600.jpg 600w, luxor_800.jpg 800w, luxor_1200.jpg 1200w" sizes="(max-width: 600px) 600px, (max-width: 800px) 800px, 1200px" alt="Luxor Temple">
+      <img src="luxor_600.jpg" srcset="luxor_600.jpg 600w, luxor_800.jpg 800w, luxor_1200.jpg 1200w" sizes="(min-width: 700px) 600px, (min-width: 500px) 400px, 200px" alt="Luxor Temple">
 
       <p>
          Packages include airfare, lodging, and several guided tours!
@@ -47,8 +47,10 @@
       </ul>
 
       <!-- TODO: Add <picture> -->
-      <img src="hotel_narrow.jpg" alt="Hotel" class="stretch-image">
-      
+      <picture>
+         <source media="(min-width:500px)" srcset="hotel_wide.jpg">
+         <img src="hotel_narrow.jpg" alt="Hotel" class="stretch-image">
+      </picture>
    </main>
    <footer>
       <p>
