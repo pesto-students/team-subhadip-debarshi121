@@ -1,7 +1,7 @@
 // Your solution goes here
 const playGuessingGame = (numToGuess, totalGuesses = 10) => {
 	let guessCount = 0;
-	let guess = prompt(`Enter a number between 1 and 100.`);
+	let guess = Number(prompt(`Enter a number between 1 and 100.`));
 
 	if (guess === null) {
 		return 0;
@@ -11,21 +11,22 @@ const playGuessingGame = (numToGuess, totalGuesses = 10) => {
 		} else {
 			guessCount++;
 			while (guessCount < totalGuesses) {
-				if (isNaN(parseInt(guess))) {
-					guess = prompt(`Please enter a number.`);
-				}
-				if (guess < numToGuess) {
-					guess = prompt(`${guess} is too small. Guess a larger number.`);
-					guessCount++;
-				} else if (guess > numToGuess) {
-					guess = prompt(`${guess} is too large. Guess a smaller number.`);
-					guessCount++;
-				}
-				if (guess == numToGuess) {
-					return guessCount;
-				}
-				if (guess === null) {
-					return 0;
+				switch (true) {
+					case guess === null:
+						return 0;
+					case isNaN(guess):
+						guess = Number(prompt(`Please enter a number.`));
+						break;
+					case guess < numToGuess:
+						guess = Number(prompt(`${guess} is too small. Guess a larger number.`));
+						guessCount++;
+						break;
+					case guess > numToGuess:
+						guess = Number(prompt(`${guess} is too large. Guess a smaller number.`));
+						guessCount++;
+						break;
+					case guess === numToGuess:
+						return guessCount;
 				}
 			}
 			return 0;
