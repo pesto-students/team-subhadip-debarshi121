@@ -6,12 +6,12 @@ class Person {
         this.nationality = nationality
     }
     introduce(){
-        return `My name is ${this.name}, I am ${this.age} years old, I am ${this.gender}, and I am ${this.nationality}`;
+        return `My name is ${this.name}, I am ${this.age} years old, I am ${this.gender}, and I am ${this.nationality}.`;
     }
 }
 
 const person1 = new Person('Anupam', 30, 'male', 'Indian');
-const person2 = new Person('Anupam', 28, 'male', 'Indian');
+const person2 = new Person('Rahul', 28, 'male', 'Indian');
 const person3 = new Person('Debarshi', 28, 'male', 'Indian');
 
 console.log(person1.introduce());
@@ -25,7 +25,7 @@ class Student extends Person {
         this.subject = subject;
     }
     study(){
-        return `I am studying ${this.subject}`;
+        return `I am studying ${this.subject}.`;
     }
 }
 
