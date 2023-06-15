@@ -26,10 +26,11 @@ class ScientificCalculator extends Calculator {
 
 const calc = new ScientificCalculator();
 
+console.log(Calculator.prototype.add.call(calc, 10, 5));
+console.log(Calculator.prototype.subtract.apply(calc, [10, 5]));
+
 const multiplyByTwo = Calculator.prototype.multiply.bind(calc, 2);
 const powerOfThree = ScientificCalculator.prototype.power.bind(calc, 3);
 
-console.log(Calculator.prototype.add.call(calc, 10, 5));
-console.log(Calculator.prototype.subtract.apply(calc, [10, 5]));
 console.log(multiplyByTwo(5));
-console.log(powerOfThree(4));
+console.log(powerOfThree(2));
