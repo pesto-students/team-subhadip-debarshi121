@@ -1,4 +1,8 @@
 const person = {
+	age : 28,
+	get age() {
+		return undefined;
+	},
 	getAge() {
 		return this.age;
 	},
@@ -19,11 +23,7 @@ Object.defineProperty(person, "email", {
 	enumerable: true,
 });
 
-Object.defineProperty(person, "age", {
-	value: 28,
-	writable: true,
-	enumerable: false,
-});
+console.log(person.age);
 
 const Vehicle = {
 	make: "VW",
@@ -37,10 +37,9 @@ const Vehicle = {
 const Car = Object.create(Vehicle);
 
 Car.numDoors = 2;
-Car.getDetails = function() {
-   return `${this.make} ${this.model} ${this.year} has ${this.numDoors} doors!`;
-} 
-
+Car.getDetails = function () {
+	return `${this.make} ${this.model} ${this.year} has ${this.numDoors} doors!`;
+};
 
 const vehicle = Vehicle;
 const car = Car;
