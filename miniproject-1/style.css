@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Handlee&family=Roboto:wght@300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: #f3f4f6;
+}
+
+p,
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+#top-nav {
+    background: #f8fafc;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05));
+}
+
+#site-title {
+    font-size: xx-large;
+    font-family: 'Lobster', cursive;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    width: 80%;
+    max-width: 1280px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#section-input {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+h1 {
+    color: #475569;
+}
+
+#section-input p {
+    text-align: center;
+    color: #475569;
+    font-size: 18px;
+}
+
+#input-keyword {
+    width: 60%;
+    height: 50px;
+    border: 1px solid #d1d5db;
+    border-radius: 0;
+    padding: 0px 20px 0px 20px;
+    font-size: 18px;
+    color: #4b5563;
+}
+
+#section-input button {
+    padding: 15px 30px;
+    border-radius: 0;
+    background-color: #f56565;
+    color: #ffffff;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#section-input button:hover {
+    background-color: #ef4444;
+}
+
+#section-input button:disabled {
+    background-color: #94a3b8;
+    cursor: auto;
+}
+
+#section-output {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10PX;
+}
+
+.quote-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quote-card p {
+    font-family: 'Handlee', cursive;
+    word-spacing: 3px;
+    font-size: 22px;
+    color: #475569;
+    margin-bottom: 15px;
+}
+
+.quote-card cite {
+    color: #4b5563;
+    text-align: center;
+}
+
+#section-error p {
+   color: #475569;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    #section-output {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    #input-keyword {
+        width: 80%;
+        height: 40px;
+        padding: 0px 10px 0px 10px;
+        font-size: 16px;
+    }
+
+    #section-input button {
+        padding: 10px 15px;
+        border-radius: 0;
+        background-color: #f87171;
+        color: #f3f4f6;
+        border: none;
+        font-weight: 600;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    #section-output {
+        grid-template-columns: auto;
+    }
+}
