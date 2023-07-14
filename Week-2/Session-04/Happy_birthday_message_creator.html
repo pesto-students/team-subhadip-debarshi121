@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			label {
+				display: inline-block;
+				width: 150px;
+			}
+			div {
+				margin-bottom: 10px;
+			}
+			#number {
+				width: 50px;
+			}
+		</style>
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				document.getElementById("color").addEventListener("change", (e) => {
+                    document.getElementById("message").style.color = e.target.value
+                })
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Happy Birthday Message Creator</h1>
+		<form action="#" method="POST" enctype="multipart/form-data">
+			<div>
+				<label for="message">Message?</label>
+				<input name="message" id="message" type="text" required />
+			</div>
+			<div>
+				<label for="email">Email address?</label>
+				<input
+					name="email"
+					id="email"
+					type="email"
+					pattern="[a-zA-Z0-9-_\.]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-
+            9-]+)*"
+					required
+				/>
+			</div>
+			<div>
+				<label for="date">Date to send?</label>
+				<input type="date" name="date" id="date" required />
+			</div>
+			<div>
+				<label for="color">Message color?</label>
+				<input type="color" name="color" id="color" />
+			</div>
+			<div>
+				<label for="number">Number of blinks?</label>
+				<input type="number" name="number" id="number" value="0" min="0" max="10" />
+			</div>
+			<div>
+				<label for="volume">Music volume?</label>
+				<input type="range" value="20" min="0" max="50" name="volume" id="volume" />
+			</div>
+			<div>
+				<button id="submit" name="submit">Send Birthday Message</button>
+			</div>
+		</form>
+	</body>
+</html>
