@@ -1,5 +1,3 @@
-// Cocktail Shaker Sort algorithm
-
 function cocktailShakerSort(arr) {
 	const countVowels = (str) => {
 		const vowels = "aeiouAEIOU";
@@ -23,7 +21,6 @@ function cocktailShakerSort(arr) {
 	do {
 		swapped = false;
 
-		// Move the largest elements to the end
 		for (let i = start; i < end; i++) {
 			if (countVowels(arr[i]) < countVowels(arr[i + 1])) {
 				swap(arr, i, i + 1);
@@ -32,7 +29,6 @@ function cocktailShakerSort(arr) {
 		}
 		end--;
 
-		// Move the smallest elements to the beginning
 		for (let i = end; i > start; i--) {
 			if (countVowels(arr[i]) > countVowels(arr[i - 1])) {
 				swap(arr, i, i - 1);
