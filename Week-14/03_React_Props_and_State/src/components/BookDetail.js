@@ -1,10 +1,14 @@
-const BookDetail = ({ title, author, year }) => {
+import { useState } from "react";
+
+const BookDetail = ({ desc }) => {
+  const [showDetails, setShowDetails] = useState(false);
   return (
-    <div>
-      <h3>{title}</h3>
-      <p>Author: {author}</p>
-      <p>Year: {year}</p>
-    </div>
+    <>
+      {showDetails && <div>{desc}</div>}
+      <button onClick={() => setShowDetails((prevState) => !prevState)}>
+        {showDetails === true ? "Hide Details" : "Show Details"}
+      </button>
+    </>
   );
 };
 

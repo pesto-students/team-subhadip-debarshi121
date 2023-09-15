@@ -1,7 +1,9 @@
-const WithLogging = (BookList) => {
+const WithLogging = (Component) => {
+  const logData = (data) => {
+    console.log("Log: ", data);
+  };
   return () => {
-    console.log("BookList rendered");
-    return <BookList />;
+    return <Component logData={logData} />;
   };
 };
 
