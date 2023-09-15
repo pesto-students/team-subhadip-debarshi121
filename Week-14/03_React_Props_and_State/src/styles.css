@@ -1,0 +1,10 @@
+.BookList {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.Book {
+  background: #f0f0f0f0;
+  padding: 10px;
+}
