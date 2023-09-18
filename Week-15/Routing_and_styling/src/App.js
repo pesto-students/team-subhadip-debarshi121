@@ -7,6 +7,7 @@ import SkillsPage from "./pages/Skills";
 import ProjectDetailsPage from "./pages/ProjectDetails";
 import ErrorPage from "./pages/Error";
 import BlogsPage from "./pages/Blogs";
+import BlogDetailsPage from "./pages/BlogDetails";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/skills" element={<SkillsPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/blogs" element={<BlogsPage />} />
+          <Route path="/blogs/:id" element={<BlogDetailsPage />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>
