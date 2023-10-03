@@ -19,7 +19,7 @@ const Home = () => {
 				</div>
 			</section>
 
-			<section className=" text-gray-600 py-5">
+			{/* <section className=" text-gray-600 py-5">
 				<div className="container mx-auto">
 					<div className="border border-gray-100 mt-10 p-5 rounded shadow">
 						<div className="flex justify-between mb-5">
@@ -34,7 +34,7 @@ const Home = () => {
 						))}
 					</div>
 				</div>
-			</section>
+			</section> */}
 		</>
 	);
 };

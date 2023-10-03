@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import axios from "axios"
 
 const FitnessForm = () => {
 	const [formData, setFormData] = useState({
@@ -20,8 +21,35 @@ const FitnessForm = () => {
 		});
 	};
 
-	const handleGenerateWorkoutPlan = (e) => {
+	const handleGenerateWorkoutPlan = async (e) => {
 		e.preventDefault();
+
+		const apiUrl = `https://generativelanguage.googleapis.com/v1beta2/models/chat-bison-001:generateMessage`;
+
+		const requestData = {
+			prompt: {
+				context: "",
+				examples: [],
+				messages: [{ content: "Generate a 6 days workout plan for me. My age is 28, my gender is male, fitness level is beginner, height is 5.10 feet & weight is 60kg. Target is weight gain." }],
+			},
+			temperature: 0.25,
+			top_k: 40,
+			top_p: 0.95,
+			candidate_count: 1,
+		};
+
+		const headers = {
+			"Content-Type": "application/json",
+		};
+
+		try {
+			const response = await axios.post(`${apiUrl}?key=${process.env.REACT_APP_GOOGLE_PALM_API_KEY}`, requestData, {
+				headers,
+			});
+			console.log(response)
+		} catch (error) {
+			console.log(error)
+		}
 	};
 
 	return (
