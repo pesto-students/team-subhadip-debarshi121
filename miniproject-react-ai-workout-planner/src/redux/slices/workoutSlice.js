@@ -10,6 +10,7 @@ const workoutSlice = createSlice({
 	name: "workout",
 	initialState: {
 		exercises: [],
+		heading: '',
 		status: "idle",
 		error: null,
 	},
@@ -21,7 +22,8 @@ const workoutSlice = createSlice({
 			})
 			.addCase(generateExercises.fulfilled, (state, action) => {
 				state.status = "succeeded";
-				state.exercises = action.payload;
+				state.exercises = action.payload.jsonData;
+				state.heading = action.payload.heading;
 			})
 			.addCase(generateExercises.rejected, (state, action) => {
 				state.status = "failed";

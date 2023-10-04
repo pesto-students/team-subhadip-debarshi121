@@ -5,7 +5,7 @@ import { Provider } from "react-redux";
 import store from "./redux/store";
 function App() {
 	return (
-		<div className="App">
+		<div className="App bg-gray-50">
 			<BrowserRouter>
 				<Header />
 				<Provider store={store}>

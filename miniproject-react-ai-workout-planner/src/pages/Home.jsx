@@ -7,7 +7,7 @@ import toast, { Toaster } from "react-hot-toast";
 import * as html2pdf from "html2pdf.js";
 
 const Home = () => {
-	const { exercises, status, error } = useSelector((state) => state.workout);
+	const { exercises, heading, status, error } = useSelector((state) => state.workout);
 
 	const handleDownload = () => {
 		const element = document.getElementById("plan");
@@ -38,7 +38,7 @@ const Home = () => {
 						<h1 className="text-xl font-medium text-center">Welcome to AI Workout Planner App!</h1>
 						<p className="text-center mt-5">Introducing the future of fitness: our personalized workout planner app powered by cutting-edge AI technology. Say goodbye to generic fitness routines and hello to a tailored fitness experience like never before. With our app, achieving your fitness goals has never been easier or more efficient. </p>
 					</div>
-					<div className="border border-gray-100 mt-10 p-5 rounded shadow">
+					<div className="border border-gray-100 mt-10 p-5 rounded shadow bg-white">
 						<p className="text-center font-medium">Get ready to revolutionize your workout regimen and unlock your full potential with the power of AI.</p>
 						<FitnessForm />
 					</div>
@@ -49,7 +49,7 @@ const Home = () => {
 				<section className="p-5">
 					<div className="container mt-10 p-5 animate-pulse mx-auto h-20 bg-gray-100 rounded flex gap-2 items-center justify-center">
 						<div className="h-5 w-5 border-t-transparent border-solid animate-spin rounded-full border-purple-500 border-4"></div>
-						<span>AI is working on your workout plan...</span>
+						<span>AI is preparing your workout plan...</span>
 					</div>
 				</section>
 			)}
@@ -57,25 +57,33 @@ const Home = () => {
 			{status === "succeeded" && exercises.length > 0 && (
 				<section className=" text-gray-600 p-5">
 					<div className="container mx-auto">
-						<div className="border border-gray-100 mt-10 p-5 rounded shadow">
-							<div className="flex gap-3 sm:flex-row flex-col items-center justify-between mb-5">
-								<h2 className="font-medium text-xl">Your AI generated day wise workout plan</h2>
-								<button onClick={handleDownload} className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-medium px-3 py-2 rounded flex items-center gap-1 w-40">
-									<MdFileDownload className="mt-0.5" />
-									<span>Download now</span>
-								</button>
+						<div className="border border-gray-100 mt-10 p-5 rounded shadow bg-white">
+							<div className="mb-5">
+								<h2 className="font-medium text-center">{heading}</h2>
 							</div>
 							<div id="plan">
 								{exercises.map((data, i) => (
 									<WorkoutCard data={data} key={i} />
 								))}
 							</div>
+							<div className="flex justify-center">
+								<button onClick={handleDownload} className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-medium px-3 py-2 rounded flex items-center gap-1 w-40">
+									<MdFileDownload className="mt-0.5" />
+									<span>Download now</span>
+								</button>
+							</div>
 						</div>
 					</div>
 				</section>
 			)}
 
-			{status === "failed" && <section>{error}</section>}
+			{status === "failed" && (
+				<section className="p-5">
+					<div className="container mx-auto">
+						<p className="text-red-500 text-center">{error}</p>
+					</div>
+				</section>
+			)}
 			<Toaster />
 		</>
 	);
