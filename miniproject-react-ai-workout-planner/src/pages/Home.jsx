@@ -7,7 +7,7 @@ import toast, { Toaster } from "react-hot-toast";
 import * as html2pdf from "html2pdf.js";
 
 const Home = () => {
-	const { exercises, heading, status, error } = useSelector((state) => state.workout);
+	const { exercises, heading, status } = useSelector((state) => state.workout);
 
 	const handleDownload = () => {
 		const element = document.getElementById("plan");
@@ -80,7 +80,7 @@ const Home = () => {
 			{status === "failed" && (
 				<section className="p-5">
 					<div className="container mx-auto">
-						<p className="text-red-500 text-center">{error}</p>
+						<p className="text-red-500 text-center">Something is wrong. Please try again!</p>
 					</div>
 				</section>
 			)}

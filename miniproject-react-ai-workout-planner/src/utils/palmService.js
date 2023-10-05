@@ -66,17 +66,18 @@ export const generateAIWorkoutPlan = async (userData) => {
 		const response = await axios.post(`${apiUrl}?key=${process.env.REACT_APP_GOOGLE_PALM_API_KEY}`, requestData, {
 			headers,
 		});
-		const output = response.data.candidates[0].content;
-		console.log(output);
+
+		const output = response.data.candidates[0].output;
+
+		console.log(output)
+
 		const jsonStartIndex = output.indexOf("[");
 		const jsonEndIndex = output.lastIndexOf("]") + 1;
 		const json = output.substring(jsonStartIndex, jsonEndIndex);
-		const headingStartIndex = output.lastIndexOf("`") + 1;
-		const headingIndex = output.lastIndexOf(".") + 1;
-		const heading = output.substring(headingStartIndex, headingIndex);
+
 		return {
 			jsonData: JSON.parse(json),
-			heading,
+			heading: 'Your AI generated workout plan is ready!',
 		};
 	} catch (error) {
 		console.log(error);
