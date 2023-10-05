@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const generateAIWorkoutPlan = async (userData) => {
-	const apiUrl = `https://generativelanguage.googleapis.com/v1beta2/models/chat-bison-001:generateMessage`;
+	const apiUrl = `https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText`;
 
 	const content = `
 	    Based on the given user data, generate a excercise plan for a week.
@@ -52,13 +52,9 @@ export const generateAIWorkoutPlan = async (userData) => {
 
 	const requestData = {
 		prompt: {
-			context: "",
-			examples: [],
-			messages: [{ content }],
+			"text": content
 		},
-		temperature: 0.25,
-		top_k: 40,
-		top_p: 0.95,
+		temperature: 1.0,
 		candidate_count: 1,
 	};
 
