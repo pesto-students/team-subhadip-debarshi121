@@ -1,0 +1,75 @@
+[{
+  "_id": {
+    "$oid": "6533eda978e21b5c449a05ee"
+  },
+  "name": "Director A",
+  "nationality": "Indian",
+  "moviesDirected": [
+    {
+      "$oid": "6533e09378e21b5c449a05cf"
+    },
+    {
+      "$oid": "6533e09378e21b5c449a05d4"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6533eda978e21b5c449a05ef"
+  },
+  "name": "Director B",
+  "nationality": "American",
+  "moviesDirected": [
+    {
+      "$oid": "6533e09378e21b5c449a05d0"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6533eda978e21b5c449a05f0"
+  },
+  "name": "Director C",
+  "nationality": "Indian",
+  "moviesDirected": [
+    {
+      "$oid": "6533e09378e21b5c449a05d1"
+    },
+    {
+      "$oid": "6533e09378e21b5c449a05d5"
+    },
+    {
+      "$oid": "6533e09378e21b5c449a05d6"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6533eda978e21b5c449a05f1"
+  },
+  "name": "Director D",
+  "nationality": "American",
+  "moviesDirected": [
+    {
+      "$oid": "6533e09378e21b5c449a05d2"
+    },
+    {
+      "$oid": "6533e09378e21b5c449a05d7"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6533eda978e21b5c449a05f2"
+  },
+  "name": "Director E",
+  "nationality": "Indian",
+  "moviesDirected": [
+    {
+      "$oid": "6533e09378e21b5c449a05d3"
+    },
+    {
+      "$oid": "6533e09378e21b5c449a05d8"
+    }
+  ]
+}]
