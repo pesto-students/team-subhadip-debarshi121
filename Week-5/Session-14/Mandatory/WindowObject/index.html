@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const displayWindowProperties = () => {
+            console.log(`User agent: ${window.navigator.userAgent}`);
+            console.log(`Screen width: ${window.screen.width}`);
+            console.log(`Screen height: ${window.screen.height}`);
+            console.log(`Location href: ${window.location.href}`);
+            console.log(`Location pathname: ${window.location.pathname}`);
+            console.log(`Session storage: ${window.sessionStorage}`);
+            console.log(`Local storage: ${window.localStorage}`);
+        }
+
+        window.onload = displayWindowProperties()
+    </script>
+</body>
+</html>
