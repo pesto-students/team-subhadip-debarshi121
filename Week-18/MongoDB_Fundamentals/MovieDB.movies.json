@@ -1,0 +1,205 @@
+[{
+  "_id": {
+    "$oid": "6533f33878e21b5c449a05f3"
+  },
+  "title": "Movie A",
+  "releaseYear": 2023,
+  "actors": [
+    {
+      "$oid": "6533e86a78e21b5c449a05e2"
+    },
+    {
+      "$oid": "6533e86a78e21b5c449a05e3"
+    },
+    {
+      "$oid": "6533e86a78e21b5c449a05e4"
+    }
+  ],
+  "director": {
+    "$oid": "6533eda978e21b5c449a05ee"
+  },
+  "genre": [
+    "Action",
+    "Thriller"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6533f33878e21b5c449a05f4"
+  },
+  "title": "Movie B",
+  "releaseYear": 2023,
+  "actors": [
+    {
+      "$oid": "6533e86a78e21b5c449a05e4"
+    }
+  ],
+  "director": {
+    "$oid": "6533eda978e21b5c449a05f2"
+  },
+  "genre": [
+    "Comedy"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6533f33878e21b5c449a05f5"
+  },
+  "title": "Movie C",
+  "releaseYear": 2022,
+  "actors": [
+    {
+      "$oid": "6533e86a78e21b5c449a05e5"
+    }
+  ],
+  "director": {
+    "$oid": "6533eda978e21b5c449a05ef"
+  },
+  "genre": [
+    "Action",
+    "Romance"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6533f33878e21b5c449a05f6"
+  },
+  "title": "Movie D",
+  "releaseYear": 2023,
+  "actors": [
+    {
+      "$oid": "6533e86a78e21b5c449a05e1"
+    },
+    {
+      "$oid": "6533e86a78e21b5c449a05e2"
+    },
+    {
+      "$oid": "6533e86a78e21b5c449a05e3"
+    },
+    {
+      "$oid": "6533e86a78e21b5c449a05e5"
+    }
+  ],
+  "director": {
+    "$oid": "6533eda978e21b5c449a05ee"
+  },
+  "genre": [
+    "Drama",
+    "Thriller"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6533f33878e21b5c449a05f7"
+  },
+  "title": "Movie E",
+  "releaseYear": 2023,
+  "actors": [
+    {
+      "$oid": "6533e86a78e21b5c449a05e6"
+    }
+  ],
+  "director": {
+    "$oid": "6533eda978e21b5c449a05ef"
+  },
+  "genre": [
+    "Crime"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6533f33878e21b5c449a05f8"
+  },
+  "title": "Movie F",
+  "releaseYear": 2020,
+  "actors": [
+    {
+      "$oid": "6533e86a78e21b5c449a05e6"
+    }
+  ],
+  "director": {
+    "$oid": "6533eda978e21b5c449a05ee"
+  },
+  "genre": [
+    "Horror",
+    "Mystery"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6533f33878e21b5c449a05f9"
+  },
+  "title": "Movie G",
+  "releaseYear": 2023,
+  "actors": [
+    {
+      "$oid": "6533e86a78e21b5c449a05e7"
+    }
+  ],
+  "director": {
+    "$oid": "6533eda978e21b5c449a05f0"
+  },
+  "genre": [
+    "Action",
+    "Thriller"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6533f33878e21b5c449a05fa"
+  },
+  "title": "Movie H",
+  "releaseYear": 2021,
+  "actors": [
+    {
+      "$oid": "6533e86a78e21b5c449a05e1"
+    },
+    {
+      "$oid": "6533e86a78e21b5c449a05e7"
+    }
+  ],
+  "director": {
+    "$oid": "6533eda978e21b5c449a05ef"
+  },
+  "genre": [
+    "War"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6533f33878e21b5c449a05fb"
+  },
+  "title": "Movie I",
+  "releaseYear": 2020,
+  "actors": [
+    {
+      "$oid": "6533e86a78e21b5c449a05e8"
+    }
+  ],
+  "director": {
+    "$oid": "6533eda978e21b5c449a05f1"
+  },
+  "genre": [
+    "Comedy",
+    "Family"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6533f33878e21b5c449a05fc"
+  },
+  "title": "Movie J",
+  "releaseYear": 2023,
+  "actors": [
+    {
+      "$oid": "6533e86a78e21b5c449a05e8"
+    }
+  ],
+  "director": {
+    "$oid": "6533eda978e21b5c449a05f2"
+  },
+  "genre": [
+    "History",
+    "War"
+  ]
+}]

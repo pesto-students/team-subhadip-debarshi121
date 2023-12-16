@@ -1,0 +1,143 @@
+db.actors.insertMany([
+    {
+        name: "Actor A",
+        nationality: "American",
+        moviesActed: [ObjectId("6533e09378e21b5c449a05d6"), ObjectId("6533e09378e21b5c449a05d2")]
+    },
+    {
+        name: "Actor B",
+        nationality: "American",
+        moviesActed: [ObjectId("6533e09378e21b5c449a05cf"), ObjectId("6533e09378e21b5c449a05d2")]
+    },
+    {
+        name: "Actor C",
+        nationality: "Indian",
+        moviesActed: [ObjectId("6533e09378e21b5c449a05cf"), ObjectId("6533e09378e21b5c449a05d2")]
+    },
+    {
+        name: "Actor D",
+        nationality: "Indian",
+        moviesActed: [ObjectId("6533e09378e21b5c449a05d0"), ObjectId("6533e09378e21b5c449a05cf")]
+    },
+    {
+        name: "Actor E",
+        nationality: "American",
+        moviesActed: [ObjectId("6533e09378e21b5c449a05d2"), ObjectId("6533e09378e21b5c449a05d1")]
+    },
+    {
+        name: "Actor F",
+        nationality: "Indian",
+        moviesActed: [ObjectId("6533e09378e21b5c449a05d4"), ObjectId("6533e09378e21b5c449a05d3")]
+    },
+    {
+        name: "Actor G",
+        nationality: "American",
+        moviesActed: [ObjectId("6533e09378e21b5c449a05d6"), ObjectId("6533e09378e21b5c449a05d5")]
+    },
+    {
+        name: "Actor H",
+        nationality: "Indian",
+        moviesActed: [ObjectId("6533e09378e21b5c449a05d8"), ObjectId("6533e09378e21b5c449a05d7")]
+    },
+]);
+
+db.movies.insertMany([
+    {
+        title: "Movie A",
+        releaseYear: 2023,
+        actors: [ObjectId("6533e86a78e21b5c449a05e2"), ObjectId("6533e86a78e21b5c449a05e3"),ObjectId("6533e86a78e21b5c449a05e4")],
+        director: ObjectId("6533eda978e21b5c449a05ee"),
+        genre: ["Action", "Thriller"]
+    },
+    {
+        title: "Movie B",
+        releaseYear: 2023,
+        actors: [ObjectId("6533e86a78e21b5c449a05e4")],
+        director: ObjectId("6533eda978e21b5c449a05f2"),
+        genre: ["Comedy"]
+    },
+    {
+        title: "Movie C",
+        releaseYear: 2022,
+        actors: [ObjectId("6533e86a78e21b5c449a05e5")],
+        director: ObjectId("6533eda978e21b5c449a05ef"),
+        genre: ["Action", "Romance"]
+    },
+    {
+        title: "Movie D",
+        releaseYear: 2023,
+        actors: [ObjectId("6533e86a78e21b5c449a05e1"), ObjectId("6533e86a78e21b5c449a05e2"), ObjectId("6533e86a78e21b5c449a05e3"), ObjectId("6533e86a78e21b5c449a05e5")],
+        director: ObjectId("6533eda978e21b5c449a05ee"),
+        genre: ["Drama", "Thriller"]
+    },
+    {
+        title: "Movie E",
+        releaseYear: 2023,
+        actors: [ObjectId("6533e86a78e21b5c449a05e6")],
+        director: ObjectId("6533eda978e21b5c449a05ef"),
+        genre: ["Crime"]
+    },
+    {
+        title: "Movie F",
+        releaseYear: 2020,
+        actors: [ObjectId("6533e86a78e21b5c449a05e6")],
+        director: ObjectId("6533eda978e21b5c449a05ee"),
+        genre: ["Horror", "Mystery"]
+    },
+    {
+        title: "Movie G",
+        releaseYear: 2023,
+        actors: [ObjectId("6533e86a78e21b5c449a05e7")],
+        director: ObjectId("6533eda978e21b5c449a05f0"),
+        genre: ["Action", "Thriller"]
+    },
+    {
+        title: "Movie H",
+        releaseYear: 2021,
+        actors: [ObjectId("6533e86a78e21b5c449a05e1"), ObjectId("6533e86a78e21b5c449a05e7")],
+        director: ObjectId("6533eda978e21b5c449a05ef"),
+        genre: ["War"]
+    },
+    {
+        title: "Movie I",
+        releaseYear: 2020,
+        actors: [ObjectId("6533e86a78e21b5c449a05e8")],
+        director: ObjectId("6533eda978e21b5c449a05f1"),
+        genre: ["Comedy", "Family"]
+    },
+    {
+        title: "Movie J",
+        releaseYear: 2023,
+        actors: [ObjectId("6533e86a78e21b5c449a05e8")],
+        director: ObjectId("6533eda978e21b5c449a05f2"),
+        genre: ["History", "War"]
+    }
+]);
+
+db.directors.insertMany([
+    {
+        name: "Director A",
+        nationality: "Indian",
+        moviesDirected: [ObjectId("6533e09378e21b5c449a05cf"), ObjectId("6533e09378e21b5c449a05d4")]
+    },
+    {
+        name: "Director B",
+        nationality: "American",
+        moviesDirected: [ObjectId("6533e09378e21b5c449a05d0")]
+    },
+    {
+        name: "Director C",
+        nationality: "Indian",
+        moviesDirected: [ObjectId("6533e09378e21b5c449a05d1"), ObjectId("6533e09378e21b5c449a05d5"), ObjectId("6533e09378e21b5c449a05d6")]
+    },
+    {
+        name: "Director D",
+        nationality: "American",
+        moviesDirected: [ObjectId("6533e09378e21b5c449a05d2"), ObjectId("6533e09378e21b5c449a05d7")]
+    },
+    {
+        name: "Director E",
+        nationality: "Indian",
+        moviesDirected: [ObjectId("6533e09378e21b5c449a05d3"), ObjectId("6533e09378e21b5c449a05d8")]
+    }
+]);
