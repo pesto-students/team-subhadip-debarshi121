@@ -1,0 +1,120 @@
+[{
+  "_id": {
+    "$oid": "6533e86a78e21b5c449a05e1"
+  },
+  "name": "Actor A",
+  "nationality": "American",
+  "moviesActed": [
+    {
+      "$oid": "6533e09378e21b5c449a05d6"
+    },
+    {
+      "$oid": "6533e09378e21b5c449a05d2"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6533e86a78e21b5c449a05e2"
+  },
+  "name": "Actor B",
+  "nationality": "American",
+  "moviesActed": [
+    {
+      "$oid": "6533e09378e21b5c449a05cf"
+    },
+    {
+      "$oid": "6533e09378e21b5c449a05d2"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6533e86a78e21b5c449a05e3"
+  },
+  "name": "Actor C",
+  "nationality": "Indian",
+  "moviesActed": [
+    {
+      "$oid": "6533e09378e21b5c449a05cf"
+    },
+    {
+      "$oid": "6533e09378e21b5c449a05d2"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6533e86a78e21b5c449a05e4"
+  },
+  "name": "Actor D",
+  "nationality": "Indian",
+  "moviesActed": [
+    {
+      "$oid": "6533e09378e21b5c449a05d0"
+    },
+    {
+      "$oid": "6533e09378e21b5c449a05cf"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6533e86a78e21b5c449a05e5"
+  },
+  "name": "Actor E",
+  "nationality": "American",
+  "moviesActed": [
+    {
+      "$oid": "6533e09378e21b5c449a05d2"
+    },
+    {
+      "$oid": "6533e09378e21b5c449a05d1"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6533e86a78e21b5c449a05e6"
+  },
+  "name": "Actor F",
+  "nationality": "Indian",
+  "moviesActed": [
+    {
+      "$oid": "6533e09378e21b5c449a05d4"
+    },
+    {
+      "$oid": "6533e09378e21b5c449a05d3"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6533e86a78e21b5c449a05e7"
+  },
+  "name": "Actor G",
+  "nationality": "American",
+  "moviesActed": [
+    {
+      "$oid": "6533e09378e21b5c449a05d6"
+    },
+    {
+      "$oid": "6533e09378e21b5c449a05d5"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6533e86a78e21b5c449a05e8"
+  },
+  "name": "Actor H",
+  "nationality": "Indian",
+  "moviesActed": [
+    {
+      "$oid": "6533e09378e21b5c449a05d8"
+    },
+    {
+      "$oid": "6533e09378e21b5c449a05d7"
+    }
+  ]
+}]

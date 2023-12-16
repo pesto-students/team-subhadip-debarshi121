@@ -1,0 +1,23 @@
+// Find all movies released in a specific year
+
+db.movies.find({ releaseYear: 2023 });
+
+// Find all movies in a specific genre
+
+db.movies.find({ genre: "Action" });
+
+// Find all movies directed by a specific director
+
+db.movies.find({ director: ObjectId("6533eda978e21b5c449a05ef") });
+
+// Find all movies that a specific actor acted in
+
+db.movies.find({ actors: ObjectId("6533e86a78e21b5c449a05e1") });
+
+// Find all directors from a specific nationality
+
+db.directors.find({ nationality: "American" });
+
+// Find all actors from a specific nationality
+
+db.actors.find({ nationality: "Indian" });
